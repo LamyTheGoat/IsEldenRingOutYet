@@ -1,12 +1,8 @@
 {
   "name": "iseldenringoutyet",
   "version": "1.0.0",
-  "description": "web site for checking elden ring status",
+  "description": "Web app for checking Elden Ring status",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -15,12 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/LamyTheGoat/IsEldenRingOutYet.git"
   },
-  "keywords": [
-    "elden",
-    "ring",
-    "from",
-    "software"
-  ],
   "author": "LamyTheGoat",
   "license": "ISC",
   "bugs": {
