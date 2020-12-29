@@ -22,9 +22,9 @@ app.get('/', function(req, res){
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>uiCookies:Resto &mdash; Free Bootstrap Theme, Free Restaurant Responsive Bootstrap Website Template</title>
-    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <title>Is Elden Ring Out Yet?</title>
+    <meta name="description" content="Website for checking up if there is any news from Elden Ring">
+    <meta name="keywords" content="Elden Ring, From Software, Dark Souls, Hidetaka Miyazaki, George R.R. Martin, Sekiro">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
@@ -36,6 +36,15 @@ app.get('/', function(req, res){
     <![endif]-->
   </head>
   <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
     
     <!-- Fixed navbar -->
     
