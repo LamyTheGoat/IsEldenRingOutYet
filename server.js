@@ -13,7 +13,7 @@ app.get('/', function(req, res){
     var DateLastInfo = new Date(jsonData.lastUpdateDate);
     var now = new Date();
     var DaysBetween = parseInt((now.getTime()-DateLastInfo.getTime())/(1000 * 3600 * 24));
-    var DateLastInfoStr = (DateLastInfo.getUTCDate()+1)+ '/' + (DateLastInfo.getUTCMonth()+1) + '/' + DateLastInfo.getUTCFullYear();
+    var DateLastInfoStr = (DateLastInfo.getUTCDate())+ '/' + (DateLastInfo.getUTCMonth()+1) + '/' + DateLastInfo.getUTCFullYear();
     
     
     var sendvalue =`
