@@ -132,8 +132,10 @@ app.get('/', function(req, res){
                   `+DateLastInfoStr+`
               </div>
               <div class="h1 text-center" id="daysSinceLastUpdate">
+                <div class="video-responsive">
                   <iframe width="560" height="315" src="`+jsonData.lastUpdateLink+`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="eldenRingVideo">
                   </iframe>
+                </div>
               </div>
             </div>
         </div>
