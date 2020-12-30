@@ -110,7 +110,7 @@ a:hover, a:focus, a:active {
 
 @media screen and (max-width: 768px) {
   .probootstrap-navbar {
-    background: white;
+    background: black;
     -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
   }
@@ -251,7 +251,7 @@ a:hover, a:focus, a:active {
 .probootstrap-navbar .dropdown > .dropdown-menu > li.open > a, .probootstrap-navbar .dropdown > .dropdown-menu > li:hover > a, .probootstrap-navbar .dropdown > .dropdown-menu > li:focus > a, .probootstrap-navbar .dropdown > .dropdown-menu > li:active > a {
   border-top: none;
   color: #85C8DD;
-  background: #ffffff;
+  background: #000000;
 }
 
 .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu.open > a, .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:hover > a, .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:focus > a, .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:active > a {
@@ -263,7 +263,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-navbar .dropdown > .dropdown-menu > li.active > a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .probootstrap-navbar .navbar-right .dropdown-menu {
@@ -293,7 +293,7 @@ a:hover, a:focus, a:active {
     padding: 10px 15px;
   }
   .probootstrap-navbar .dropdown-menu a {
-    color: #ffffff;
+    color: #000000;
   }
 }
 
@@ -382,7 +382,7 @@ a:hover, a:focus, a:active {
 
 .probootstrap-navbar .navbar-nav > li.active > a:active, .probootstrap-navbar .navbar-nav > li.active > a:focus, .probootstrap-navbar .navbar-nav > li.active > a:hover {
   background: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 @media screen and (max-width: 768px) {
