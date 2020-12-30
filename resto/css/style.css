@@ -371,7 +371,7 @@ a:hover, a:focus, a:active {
 
 .probootstrap-navbar .navbar-nav > li.active > a {
   background: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 @media screen and (max-width: 768px) {
