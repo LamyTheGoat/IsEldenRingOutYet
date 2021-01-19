@@ -22,7 +22,6 @@ app.get('/', function(req, res){
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="propeller" content="558051bcfa670fb56884bddf0d4b1522">
     <title>Is Elden Ring Out Yet?</title>
     <meta name="description" content="Website for checking up if there is any news from Elden Ring">
     <meta name="keywords" content="Elden Ring, From Software, Dark Souls, Hidetaka Miyazaki, George R.R. Martin, Sekiro">
@@ -133,14 +132,7 @@ app.get('/', function(req, res){
         </div>
     </section>
 
-    <section class="probootstrap-section probootstrap-bg-black">
-        <div class="container">
-            <div class="col-md-12 text-center probootstrap-animate">
-              <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3874650,document.body||document.documentElement)</script>
-              //zuphaims.com/afu.php?zoneid=3874662
-            </div>
-        </div>
-    </section>
+
 
     
     <section class="probootstrap-copyright">
