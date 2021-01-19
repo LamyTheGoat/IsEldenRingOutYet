@@ -137,6 +137,7 @@ app.get('/', function(req, res){
         <div class="container">
             <div class="col-md-12 text-center probootstrap-animate">
               <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3874650,document.body||document.documentElement)</script>
+              //zuphaims.com/afu.php?zoneid=3874662
             </div>
         </div>
     </section>
