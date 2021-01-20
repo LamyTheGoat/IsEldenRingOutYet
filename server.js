@@ -127,22 +127,15 @@ app.get('/', function(req, res){
                   <iframe width="560" height="315" src="`+jsonData.lastUpdateLink+`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="eldenRingVideo">
                   </iframe>
                 </div>
+                <br>          
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="lamythegoat" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
               </div>
             </div>
         </div>
     </section>
 
 
-    <section class="probootstrap-section probootstrap-bg-black">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="lamythegoat" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-          </div>
 
-        </div>
-      </div>
-    </section>
 
 
 
