@@ -5,8 +5,25 @@ const app = express();
 
 
 app.use(express.static("resto"));
+app.post('/ooh', function(req,res) {
+    console.log("it works")
+    const fs = require('fs');
+    const fileName = './counters.json';
+    const file = require(fileName);
+
+    file.oohcounter = parseInt(file.oohcounter)+1;
+    
+    fs.writeFile(fileName, JSON.stringify(file), function writeJSON(err) {
+      if (err) return console.log(err);
+      console.log(JSON.stringify(file));
+      console.log('writing to ' + fileName);
+    });
+})
+
+
 app.get('/', function(req, res){
     var rawdata = fs.readFileSync('information.json');
+    var rawCOUNTERS = fs.readFileSync('counters.json');
     var jsonData = JSON.parse(rawdata);
     var isEldenRingOut = jsonData.isEldenRingOut? "Yes":"No";
     var isNewInformation = jsonData.isNewInformation? "Yes":"No";
@@ -14,6 +31,7 @@ app.get('/', function(req, res){
     var now = new Date();
     var DaysBetween = parseInt((now.getTime()-DateLastInfo.getTime())/(1000 * 3600 * 24));
     var DateLastInfoStr = (DateLastInfo.getUTCDate())+ '/' + (DateLastInfo.getUTCMonth()+1) + '/' + DateLastInfo.getUTCFullYear();
+    var oohcounter = JSON.parse(rawCOUNTERS).oohcounter;
     
     
     var sendvalue =`
@@ -38,6 +56,9 @@ app.get('/', function(req, res){
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
 
     
 
@@ -141,6 +162,32 @@ app.get('/', function(req, res){
                   </iframe>
                 </div>
                 <br>          
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="probootstrap-section probootstrap-bg-black">
+        <div class="container">
+            <div class="col-md-12 text-center probootstrap-animate">
+              <div class="probootstrap-heading">
+                <h3 class="secondary-heading">OOOOOOH SO FAR:</h3>
+                <span class="seperator">* * *</span>
+              </div>
+              <div class="h1 text-center" id="latUpdateDate">
+                  <div id="oohcnt">`+oohcounter+`</div>
+              </div>
+              <div class="h1 text-center" id="ooohsofar">
+                <a  id="oohbutton" class="BUTTON_VIG">OOOOOOOOOOH</a>
+                <script>
+                    $('#oohbutton').click(function(){
+                        $.post('/ooh');
+                        document.getElementById("oohcnt").innerHTML = parseInt(document.getElementById("oohcnt").innerHTML) +1;
+                    });
+                </script>
+                <br>
+                <br>
                 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="lamythegoat" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
               </div>
             </div>
@@ -184,3 +231,4 @@ app.get('/', function(req, res){
 });
 
 var server = app.listen(process.env.PORT);
+//var server = app.listen(8080);

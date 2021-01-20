@@ -2348,3 +2348,36 @@ section[data-section="menu"] {
     width:100%;
     position:absolute;
 }
+
+
+
+
+.BUTTON_VIG {
+   -webkit-border-radius: 64px;
+   -moz-border-radius: 64px;
+   border-radius: 64px;
+   color: #FFFFFF;
+   font-family: Tahoma;
+   font-size: 40px;
+   font-weight: 100;
+   padding: 40px;
+   background-color: #FF5D5D;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #DD380D 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_VIG:hover {
+   background: #D7B5B5;
+   border: solid #FFFFFF 1px;
+   -webkit-border-radius: 64px;
+   -moz-border-radius: 64px;
+   border-radius: 64px;
+   text-decoration: none;
+}
