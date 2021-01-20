@@ -57,7 +57,7 @@ app.get('/', function(req, res){
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
 
 
     
