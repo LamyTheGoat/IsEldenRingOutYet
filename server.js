@@ -179,7 +179,7 @@ app.get('/', function(req, res){
                   <div id="oohcnt">`+oohcounter+`</div>
               </div>
               <div class="h1 text-center" id="ooohsofar">
-                <a  id="oohbutton" class="BUTTON_VIG">OOOOOOOOOOH</a>
+                <a  id="oohbutton" class="BUTTON_VIG">OOOOOOOH</a>
                 <script>
                     $('#oohbutton').click(function(){
                         $.post('/ooh');
